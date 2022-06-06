@@ -1,0 +1,73 @@
+:root {
+  --transition-speed: 600ms;
+}
+
+a {
+  text-decoration: none;
+}
+
+.basic-btn {
+  margin-left: auto;
+  margin-right: auto;
+  color: #93ffbe;
+}
+
+.search-btn:hover {
+  box-shadow: 0 0 6px rgba(255, 0, 0, 1);
+  transition: var(--transition-speed);
+}
+
+.search-box:hover {
+  box-shadow: 0 0 6px rgba(255, 0, 0, 1);
+  transition: var(--transition-speed);
+}
+
+.profile-btn:hover {
+  box-shadow: 0 0 6px rgba(255, 0, 0, 1);
+  transition: var(--transition-speed);
+}
+
+.login-dialog {
+  text-align: center;
+  z-index: 99;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgb(177, 254, 196);
+  height: 15%;
+  width: 1295px;
+}
+
+.home-dg-bt {
+  border-radius: 5px;
+  background-color: #fbafff;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid black;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: var(--transition-speed);
+}
+
+.home-dg-bt:hover {
+  border: 1px solid #ffffff;
+  background-color: #003003;
+  color: white;
+  box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+}
+
+.card-main {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-main:hover {
+  box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+}
