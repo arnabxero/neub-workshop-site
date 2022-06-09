@@ -93,8 +93,10 @@ $name = $_POST['name'];
 $username = $_POST['username'];
 $university_id = $_POST['university_id'];
 $semester = $_POST['semester'];
+$level = $_POST['level'];
 $email = $_POST['email'];
 $password = $_POST['password'];
+
 
 
 

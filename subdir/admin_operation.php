@@ -13,8 +13,9 @@ function add_event()
     $start_date = $_POST['start_date'];
     $end_date = $_POST['end_date'];
     $link = $_POST['link'];
+    $level = $_POST['level'];
 
-    $sql = "INSERT INTO `event` (`type`, `about`, `start_date`, `end_date`, `link`) VALUES ('$name', '$details', '$start_date', '$end_date', '$link')";
+    $sql = "INSERT INTO `event` (`name`, `details`, `start_date`, `end_date`, `link`, `level`) VALUES ('$name', '$details', '$start_date', '$end_date', '$link', '$level')";
     $res = mysqli_query($con, $sql);
 
     header('Location: ../admin_dashboard.php?type=reg');
@@ -29,8 +30,9 @@ function add_schedule()
     $date = $_POST['date'];
     $time = $_POST['time'];
     $room = $_POST['room'];
+    $level = $_POST['level'];
 
-    $sql = "INSERT INTO `schedule` (`name`, `details`, `date`, `time`, `room`) VALUES ('$name', '$details', '$date', '$time', '$room')";
+    $sql = "INSERT INTO `schedule` (`name`, `details`, `date`, `time`, `room`, `level`) VALUES ('$name', '$details', '$date', '$time', '$room', '$level')";
     $res = mysqli_query($con, $sql);
 
     header('Location: ../admin_dashboard.php?type=sche');
@@ -44,8 +46,9 @@ function add_notice()
     $details = $_POST['details'];
     $date = $_POST['date'];
     $time = $_POST['time'];
+    $level = $_POST['level'];
 
-    $sql = "INSERT INTO `notice` (`name`, `details`, `date`, `time`) VALUES ('$name', '$details', '$date', '$time')";
+    $sql = "INSERT INTO `notice` (`name`, `details`, `date`, `time`, `level`) VALUES ('$name', '$details', '$date', '$time', '$level')";
     $res = mysqli_query($con, $sql);
 
     header('Location: ../admin_dashboard.php?type=notice');
@@ -62,8 +65,9 @@ function add_contest()
     $duration = $_POST['duration'];
     $password = $_POST['password'];
     $link = $_POST['link'];
+    $level = $_POST['level'];
 
-    $sql = "INSERT INTO `contest` (`name`, `details`, `start_date`, `end_date`, `duration`, `password`, `link`) VALUES ('$name', '$details', '$start_date', '$end_date', '$duration', '$password', '$link')";
+    $sql = "INSERT INTO `contest` (`name`, `details`, `start_date`, `end_date`, `duration`, `password`, `link`, `level`) VALUES ('$name', '$details', '$start_date', '$end_date', '$duration', '$password', '$link', '$level')";
     $res = mysqli_query($con, $sql);
 
     header('Location: ../admin_dashboard.php?type=contest');

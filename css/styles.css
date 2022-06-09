@@ -21,9 +21,12 @@ a {
   box-shadow: 0 0 6px rgba(255, 0, 0, 1);
   transition: var(--transition-speed);
 }
+.profile-btn-grp {
+  margin-top: 5px;
+}
 
-.profile-btn:hover {
-  box-shadow: 0 0 6px rgba(255, 0, 0, 1);
+.profile-btn-grp:hover {
+  box-shadow: 0 0 6px rgb(0, 138, 23);
   transition: var(--transition-speed);
 }
 
@@ -50,7 +53,28 @@ a {
   transition: var(--transition-speed);
 }
 
+.home-dg-bt-1 {
+  margin-left: 40px;
+  border-radius: 5px;
+  background-color: #fbafff;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid black;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: var(--transition-speed);
+}
+
 .home-dg-bt:hover {
+  border: 1px solid #ffffff;
+  background-color: #003003;
+  color: white;
+  box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+}
+
+.home-dg-bt-1:hover {
   border: 1px solid #ffffff;
   background-color: #003003;
   color: white;
@@ -61,7 +85,7 @@ a {
   width: 100%;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
-  border-radius: 5px;
+  border-radius: 2px;
   margin-top: 10px;
   margin-bottom: 5px;
   padding: 20px;
@@ -70,4 +94,76 @@ a {
 
 .card-main:hover {
   box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+}
+
+.neutral-btn {
+  padding: 3px;
+  background-color: white;
+  color: #005b06;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: var(--transition-speed);
+}
+
+.neutral-btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: #7cff85;
+  border: 2px solid rgb(0, 255, 98);
+}
+
+.mobile-pos1 {
+  margin-top: 5px;
+}
+
+
+.post-text-view-post {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-pos1 {
+    margin-top: -109px;
+    margin-left: 350px;
+  }
+  .mobile-optmz1 {
+    height: 0px;
+  }
+  body {
+    font-size: 13px;
+  }
+  .login-dialog {
+    margin-bottom: -100px;
+    width: 95%;
+  }
+  .profile-btn-grp {
+    margin-top: -100px;
+    margin-right: -10000px;
+  }
+  .home-dg-bt-1 {
+    margin-left: 0px;
+    font-size: 13px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .card-main {
+    width: 100%;
+  }
+  .custom1 {
+    margin-left: 60px;
+  }
+  .neutral-btn {
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-bottom: 10px;
+  }
+  .neutral-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: #7cff85;
+    border: 1px solid rgb(0, 255, 98);
+  }
 }
